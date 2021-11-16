@@ -1,12 +1,13 @@
 package uz.paycom.payment;
 
+import static uz.paycom.payment.PaymentActivity.EXTRA_LANG;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.WindowManager;
@@ -16,15 +17,12 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
+import androidx.appcompat.app.AppCompatActivity;
 import org.json.JSONObject;
-
 import uz.paycom.payment.api.JsonParser;
 import uz.paycom.payment.api.JsonRpcRequest;
 import uz.paycom.payment.model.Confirm;
 import uz.paycom.payment.utils.LocaleHelper;
-
-import static uz.paycom.payment.PaymentActivity.EXTRA_LANG;
 
 public class ConfirmActivity extends AppCompatActivity {
 
