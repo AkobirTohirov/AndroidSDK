@@ -34,7 +34,7 @@ dependencies {
   implementation 'androidx.appcompat:appcompat:1.3.1'
 }
 
-group = 'uz.paycom'
+group = 'uz.oson.paycom'
 version = ver
 
 bintray {
